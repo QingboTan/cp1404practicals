@@ -38,7 +38,7 @@ def check_score(score):
         response = "Pass"
     else:
         response = "Excellent"
-    return response
+    return responsed
 
 
 main()
