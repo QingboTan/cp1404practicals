@@ -15,4 +15,6 @@ except ValueError:
     print("Numerator and denominator must be valid numbers!")
 except ZeroDivisionError:
     print("Cannot divide by zero!")
+    while denominator == 0:
+        denominator = int(input("Enter the denominator again: "))
 print("Finished.")
