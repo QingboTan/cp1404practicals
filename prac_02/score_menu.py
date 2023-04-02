@@ -8,10 +8,14 @@ def main():
         if choice == "G":
             score = get_score("Enter score: (Must be 0-100 inclusive)")
         elif choice == "P":
-            result = check_score(score)
-            print(f"Your result is {result}")
+            if score == 0:
+                score = get_score()
+                result = check_score(score)
+                print(f"Your result is {result}")
         elif choice == "S":
-            print("*" * int(score))
+            if score == 0:
+                score = get_score()
+                print("*" * int(score))
         else:
             print("Invalid choice")
         print(MENU)
